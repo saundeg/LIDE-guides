@@ -26,17 +26,17 @@
         .header-content {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 40px 24px;
+            padding: 48px 24px 40px;
         }
 
         header h1 {
             margin: 0 0 10px;
-            font-size: 2.4rem;
+            font-size: 2.5rem;
         }
 
         header p {
             margin: 0;
-            max-width: 750px;
+            max-width: 760px;
             font-size: 1.1rem;
             color: #555;
         }
@@ -44,58 +44,80 @@
         main {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 40px 24px;
+            padding: 42px 24px;
         }
 
-        h2 {
+        .intro {
+            max-width: 800px;
+            margin-bottom: 34px;
+        }
+
+        .intro h2 {
             margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.6rem;
+        }
+
+        .intro p {
+            margin: 0;
+            color: #555;
         }
 
         .guide-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 24px;
-            margin-top: 30px;
         }
 
         .guide-card {
             display: block;
-            padding: 28px;
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
+            min-height: 210px;
+            padding: 30px;
+            background: #ffffff;
+            border: 1px solid #d7d7d7;
+            border-radius: 10px;
             text-decoration: none;
             color: inherit;
+            transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
         }
 
-        .guide-card:hover,
-        .guide-card:focus {
-            border-color: #555;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        .guide-card:hover {
+            transform: translateY(-3px);
+            border-color: #777;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
         }
 
         .guide-card:focus {
             outline: 3px solid #005fcc;
-            outline-offset: 3px;
+            outline-offset: 4px;
         }
 
         .guide-card h3 {
             margin-top: 0;
             margin-bottom: 12px;
-            font-size: 1.35rem;
+            font-size: 1.4rem;
         }
 
         .guide-card p {
-            margin-bottom: 0;
+            margin-bottom: 18px;
+        }
+
+        .guide-link {
+            font-weight: bold;
+            text-decoration: underline;
         }
 
         footer {
             max-width: 1100px;
-            margin: 30px auto 0;
-            padding: 25px 24px 40px;
+            margin: 20px auto 0;
+            padding: 28px 24px 40px;
             border-top: 1px solid #ddd;
             color: #555;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
+        }
+
+        footer p {
+            margin: 0 0 8px;
         }
     </style>
 </head>
@@ -106,7 +128,7 @@
     <div class="header-content">
         <h1>LIDE Guides</h1>
         <p>
-            Guidance and resources for University staff using digital learning
+            Practical guidance and resources for University staff using digital learning
             and generative AI tools.
         </p>
     </div>
@@ -114,7 +136,13 @@
 
 <main>
 
-    <h2>Browse guidance</h2>
+    <section class="intro">
+        <h2>Browse guidance</h2>
+        <p>
+            Select one of the areas below to find step-by-step guidance, key information
+            and supporting resources.
+        </p>
+    </section>
 
     <div class="guide-grid">
 
@@ -124,6 +152,7 @@
                 Guidance to support the move away from Turnitin and changes
                 to assessment workflows.
             </p>
+            <span class="guide-link">View Turnitin guidance</span>
         </a>
 
         <a class="guide-card" href="blackboard-ai/">
@@ -131,6 +160,7 @@
             <p>
                 Guidance on using the AI-enabled tools available within Blackboard.
             </p>
+            <span class="guide-link">View Blackboard AI guidance</span>
         </a>
 
         <a class="guide-card" href="generative-ai/">
@@ -139,6 +169,7 @@
                 Guidance on the responsible and effective use of generative
                 artificial intelligence.
             </p>
+            <span class="guide-link">View generative AI guidance</span>
         </a>
 
     </div>
@@ -146,7 +177,11 @@
 </main>
 
 <footer>
-    Learning Innovation and Digital Engagement
+    <p><strong>Learning Innovation and Digital Engagement</strong></p>
+    <p>
+        These guides are maintained by the LIDE team and may be updated as tools,
+        policies and services change.
+    </p>
 </footer>
 
 </body>
