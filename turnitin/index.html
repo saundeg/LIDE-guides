@@ -6,22 +6,6 @@
     <title>Turnitin Migration | LIDE Guides</title>
 
     <style>
-     .guide {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
-
-.guide:hover,
-.guide:focus {
-    border-color: #777;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-.guide:focus {
-    outline: 3px solid #005fcc;
-    outline-offset: 3px;
-}   
         * {
             box-sizing: border-box;
         }
@@ -37,6 +21,14 @@
         header {
             background: #ffffff;
             border-bottom: 1px solid #ddd;
+            position: relative;
+        }
+
+        header::after {
+            content: "";
+            display: block;
+            height: 6px;
+            background: #c78318;
         }
 
         .header-content {
@@ -78,11 +70,27 @@
         }
 
         .guide {
+            display: block;
             background: #ffffff;
             border: 1px solid #d7d7d7;
+            border-left: 5px solid #c78318;
             border-radius: 8px;
             padding: 24px;
             margin-bottom: 18px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .guide:hover,
+        .guide:focus {
+            border-color: #777;
+            border-left-color: #c78318;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .guide:focus {
+            outline: 3px solid #005fcc;
+            outline-offset: 3px;
         }
 
         .guide h3 {
@@ -93,11 +101,6 @@
         .guide p {
             margin: 0;
             color: #555;
-        }
-
-        .coming-soon {
-            font-style: italic;
-            color: #666;
         }
 
         footer {
@@ -116,7 +119,7 @@
 <header>
     <div class="header-content">
 
-        <a class="back-link" href="../">← Back to LIDE Guides</a>
+        <a class="back-link" href="../">&larr; Back to LIDE Guides</a>
 
         <h1>Turnitin Migration</h1>
 
@@ -138,15 +141,15 @@
 
     <div class="guide-list">
 
-    <a class="guide" href="rationale-for-retiring-turnitin.html">
-        <h3>Rationale for retiring Turnitin</h3>
-        <p>
-            An explanation of the University's decision to retire Turnitin Feedback Studio
-            and move to Blackboard Assignment with SafeAssign.
-        </p>
-    </a>
+        <a class="guide" href="rationale-for-retiring-turnitin.html">
+            <h3>Rationale for retiring Turnitin</h3>
+            <p>
+                An explanation of the University's decision to retire Turnitin Feedback Studio
+                and move to Blackboard Assignment with SafeAssign.
+            </p>
+        </a>
 
-</div>
+    </div>
 
 </main>
 
