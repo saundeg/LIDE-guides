@@ -23,6 +23,13 @@
             border-bottom: 1px solid #ddd;
         }
 
+        header::after {
+            content: "";
+            display: block;
+            height: 6px;
+            background: #c78318;
+        }
+
         .header-content,
         main,
         footer {
@@ -117,7 +124,8 @@
 
 <header>
     <div class="header-content">
-        <a class="back-link" href="./">← Back to Turnitin Migration guides</a>
+
+        <a class="back-link" href="./">&larr; Back to Turnitin Migration guides</a>
 
         <h1>Rationale for retiring Turnitin</h1>
 
@@ -125,6 +133,7 @@
             An explanation of the University's decision to retire Turnitin Feedback Studio
             and move to Blackboard Assignment with SafeAssign.
         </p>
+
     </div>
 </header>
 
