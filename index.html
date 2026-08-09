@@ -71,14 +71,38 @@
 
         .guide-card {
             display: block;
+            position: relative;
             min-height: 210px;
-            padding: 30px;
+            padding: 34px 30px 30px;
             background: #ffffff;
             border: 1px solid #d7d7d7;
             border-radius: 10px;
             text-decoration: none;
             color: inherit;
-            transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+            overflow: hidden;
+            transition: transform 0.15s ease, box-shadow 0.15s ease,
+                        border-color 0.15s ease;
+        }
+
+        .guide-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+        }
+
+        .turnitin::before {
+            background: #c78318;
+        }
+
+        .blackboard::before {
+            background: #7256a8;
+        }
+
+        .genai::before {
+            background: #2878a8;
         }
 
         .guide-card:hover {
@@ -128,8 +152,8 @@
     <div class="header-content">
         <h1>LIDE Guides</h1>
         <p>
-            Practical guidance and resources for University colleagues using digital learning
-            and generative AI tools.
+            Practical guidance and resources for University colleagues using
+            digital learning and generative AI tools.
         </p>
     </div>
 </header>
@@ -139,14 +163,14 @@
     <section class="intro">
         <h2>Browse guidance</h2>
         <p>
-            Select one of the areas below to find step-by-step guidance, key information
-            and supporting resources.
+            Select one of the areas below to find step-by-step guidance,
+            key information and supporting resources.
         </p>
     </section>
 
     <div class="guide-grid">
 
-        <a class="guide-card" href="turnitin/">
+        <a class="guide-card turnitin" href="turnitin/">
             <h3>Turnitin Migration</h3>
             <p>
                 Guidance to support the move away from Turnitin and changes
@@ -155,7 +179,7 @@
             <span class="guide-link">View Turnitin guidance</span>
         </a>
 
-        <a class="guide-card" href="blackboard-ai/">
+        <a class="guide-card blackboard" href="blackboard-ai/">
             <h3>Blackboard AI Tools</h3>
             <p>
                 Guidance on using the AI-enabled tools available within Blackboard.
@@ -163,7 +187,7 @@
             <span class="guide-link">View Blackboard AI guidance</span>
         </a>
 
-        <a class="guide-card" href="generative-ai/">
+        <a class="guide-card genai" href="generative-ai/">
             <h3>Generative AI Principles</h3>
             <p>
                 Guidance on the responsible and effective use of generative
@@ -179,8 +203,8 @@
 <footer>
     <p><strong>Learning Innovation and Digital Engagement</strong></p>
     <p>
-        These guides are maintained by the LIDE team and may be updated as tools,
-        policies and services change.
+        These guides are maintained by the LIDE team and may be updated as
+        tools, policies and services change.
     </p>
 </footer>
 
