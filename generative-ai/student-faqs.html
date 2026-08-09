@@ -23,6 +23,13 @@
             border-bottom: 1px solid #ddd;
         }
 
+        header::after {
+            content: "";
+            display: block;
+            height: 6px;
+            background: #2878a8;
+        }
+
         .header-content,
         main,
         footer {
@@ -63,6 +70,7 @@
         .intro {
             background: #ffffff;
             border: 1px solid #ddd;
+            border-left: 5px solid #2878a8;
             border-radius: 10px;
             padding: 24px;
             margin-bottom: 22px;
@@ -74,6 +82,10 @@
             border-radius: 8px;
             margin-bottom: 14px;
             overflow: hidden;
+        }
+
+        details[open] {
+            border-left: 5px solid #2878a8;
         }
 
         summary {
@@ -122,7 +134,7 @@
 <header>
     <div class="header-content">
 
-        <a class="back-link" href="./">← Back to Generative AI Principles</a>
+        <a class="back-link" href="./">&larr; Back to Generative AI Principles</a>
 
         <h1>Frequently Asked Questions: AI in Your Studies</h1>
 
