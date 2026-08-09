@@ -23,6 +23,13 @@
             border-bottom: 1px solid #ddd;
         }
 
+        header::after {
+            content: "";
+            display: block;
+            height: 6px;
+            background: #2878a8;
+        }
+
         .header-content {
             max-width: 1000px;
             margin: 0 auto;
@@ -65,6 +72,7 @@
             display: block;
             background: #ffffff;
             border: 1px solid #d7d7d7;
+            border-left: 5px solid #2878a8;
             border-radius: 8px;
             padding: 24px;
             margin-bottom: 18px;
@@ -75,6 +83,7 @@
         .guide:hover,
         .guide:focus {
             border-color: #777;
+            border-left-color: #2878a8;
             box-shadow: 0 4px 12px rgba(0,0,0,0.08);
         }
 
@@ -109,7 +118,7 @@
 <header>
     <div class="header-content">
 
-        <a class="back-link" href="../">← Back to LIDE Guides</a>
+        <a class="back-link" href="../">&larr; Back to LIDE Guides</a>
 
         <h1>Generative AI Principles</h1>
 
