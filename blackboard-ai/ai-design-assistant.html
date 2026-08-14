@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Design Assistant | LIDE Guides</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #f5f6f7;
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header::after {
+            content: "";
+            display: block;
+            height: 6px;
+            background: #7256a8;
+        }
+
+        .header-content,
+        main,
+        footer {
+            max-width: 950px;
+            margin: 0 auto;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        .header-content {
+            padding-top: 36px;
+            padding-bottom: 32px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 18px;
+            color: #005fcc;
+        }
+
+        .audience {
+            display: inline-block;
+            margin-bottom: 12px;
+            padding: 3px 9px;
+            background: #f1f1f1;
+            border-radius: 4px;
+            font-size: 0.78rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            color: #555;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: 2.3rem;
+            line-height: 1.2;
+        }
+
+        header p {
+            margin: 0;
+            color: #555;
+            font-size: 1.08rem;
+            max-width: 820px;
+        }
+
+        main {
+            padding-top: 36px;
+            padding-bottom: 20px;
+        }
+
+        .intro,
+        .feature,
+        .further-info {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 26px;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            border-left: 5px solid #7256a8;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.45rem;
+        }
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        a {
+            color: #005fcc;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding-top: 26px;
+            padding-bottom: 40px;
+            border-top: 1px solid #ddd;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+
+        <a class="back-link" href="./">&larr; Back to Blackboard AI Tools</a>
+
+        <span class="audience">For colleagues</span>
+
+        <h1>AI Design Assistant</h1>
+
+        <p>
+            Guidance on using Blackboard's AI Design Assistant to help plan,
+            structure and populate course content more efficiently.
+        </p>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="intro">
+        <p>
+            Creating a course from scratch is time-consuming, and not everyone has
+            dedicated instructional design support. The AI Design Assistant in Blackboard
+            Ultra is built to help you plan, structure, and populate your Blackboard sites
+            more efficiently - handling the repetitive groundwork so you can focus on the teaching.
+        </p>
+
+        <p>
+            Everything the AI Design Assistant generates is a starting point, not a final
+            product. You can adjust, edit, and customise all outputs, and you remain in full
+            control of what appears on your Blackboard site.
+        </p>
+
+        <p>
+            Content complexity can be tailored to your cohort, from undergraduate levels
+            through to advanced postgraduate levels.
+        </p>
+
+        <p>
+            The AI Design Assistant is powered by Microsoft Azure OpenAI, and Blackboard's
+            approach to AI is underpinned by principles of human oversight, fairness, privacy,
+            security, and safety.
+        </p>
+    </section>
+
+    <h2>What can the AI Design Assistant do?</h2>
+
+    <section class="feature">
+        <h3>Course structure suggestions</h3>
+        <p>
+            Generate a suggested outline of learning modules for your course based on a topic
+            or module title. This can provide a useful starting point for structuring content,
+            particularly when setting up a new taught module or reviewing an existing one.
+        </p>
+        <p>
+            Westminster module templates still provide the core items to be included, but the
+            AI Design Assistant can help with further improvements.
+        </p>
+    </section>
+
+    <section class="feature">
+        <h3>Discussion generation</h3>
+        <p>
+            Automatically generate discussion prompts relevant to a specific topic. This can
+            save time when creating activities designed to encourage student engagement and
+            critical reflection.
+        </p>
+    </section>
+
+    <section class="feature">
+        <h3>Journal generation</h3>
+        <p>
+            Create journal activity prompts for individual student reflection. This can be
+            particularly useful for practice-based or professionally oriented modules where
+            ongoing reflective writing is part of the assessment or learning design.
+        </p>
+    </section>
+
+    <section class="feature">
+        <h3>Rubric generation</h3>
+        <p>
+            Generate a marking rubric based on your assignment or assessment criteria.
+            This provides a draft structure of performance levels and descriptors that you can
+            refine before attaching it to any item to be marked.
+        </p>
+    </section>
+
+    <section class="feature">
+        <h3>Assignment prompt generation</h3>
+        <p>
+            Produce a draft assignment brief from a topic or learning outcome. This can be
+            useful for generating initial wording that you can then shape to meet your specific
+            assessment requirements and academic regulations.
+        </p>
+    </section>
+
+    <section class="feature">
+        <h3>Test question generation</h3>
+        <p>
+            Generate quiz or test questions on a given topic, including multiple-choice and
+            other question types. This can save time when building formative assessments or
+            knowledge checks within a module.
+        </p>
+    </section>
+
+    <section class="feature">
+        <h3>Question Bank generation</h3>
+        <p>
+            Build a bank of AI-generated questions on a topic that can be reused and drawn upon
+            across multiple tests. This can be particularly helpful for creating varied question
+            pools to support randomised assessments.
+        </p>
+    </section>
+
+    <section class="feature">
+        <h3>Insert or generate images</h3>
+        <p>
+            Add visual interest to course documents by generating images or searching
+            Unsplash's stock photography library with AI-suggested keywords.
+        </p>
+        <p>
+            This can help create more visually engaging course pages without needing
+            external design tools.
+        </p>
+    </section>
+
+    <section class="feature">
+        <h3>AI Conversations</h3>
+        <p>
+            Create structured AI-powered conversation activities that students can engage
+            with directly inside Blackboard. You set the topic, context, and parameters, and
+            the AI then acts as a conversational partner for students to practise, explore, or
+            reflect on course material.
+        </p>
+    </section>
+
+    <section class="feature">
+        <h3>Auto-generate layout in documents</h3>
+        <p>
+            When creating a Document in Blackboard Ultra, use AI to automatically suggest
+            a layout and content structure based on a topic. This provides a quick way to get
+            a well-formatted page up and running rather than building from a blank canvas.
+        </p>
+    </section>
+
+    <section class="further-info">
+        <h2>Further information</h2>
+
+        <p>
+            The original guide refers to the Blackboard Help page for AI Design Assistant.
+            We can add that direct link here once you provide the URL.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <strong>Learning Innovation and Digital Engagement</strong>
+</footer>
+
+</body>
+</html>
