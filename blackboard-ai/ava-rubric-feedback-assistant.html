@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVA - Rubric and Feedback Assistant | LIDE Guides</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #f5f6f7;
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header::after {
+            content: "";
+            display: block;
+            height: 6px;
+            background: #7256a8;
+        }
+
+        .header-content,
+        main,
+        footer {
+            max-width: 950px;
+            margin: 0 auto;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        .header-content {
+            padding-top: 36px;
+            padding-bottom: 32px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 18px;
+            color: #005fcc;
+        }
+
+        .audience {
+            display: inline-block;
+            margin-bottom: 12px;
+            padding: 3px 9px;
+            background: #f1f1f1;
+            border-radius: 4px;
+            font-size: 0.78rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            color: #555;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: 2.3rem;
+            line-height: 1.2;
+        }
+
+        header p {
+            margin: 0;
+            color: #555;
+            font-size: 1.08rem;
+            max-width: 820px;
+        }
+
+        main {
+            padding-top: 36px;
+            padding-bottom: 20px;
+        }
+
+        .intro,
+        .section,
+        .note,
+        .further-info {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 26px;
+            margin-bottom: 24px;
+        }
+
+        .intro {
+            border-left: 5px solid #7256a8;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.45rem;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        ul,
+        ol {
+            padding-left: 24px;
+            margin-top: 10px;
+            margin-bottom: 18px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .note {
+            border-left: 5px solid #7256a8;
+        }
+
+        .note strong {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #005fcc;
+        }
+
+        .external-link {
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding-top: 26px;
+            padding-bottom: 40px;
+            border-top: 1px solid #ddd;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+
+        <a class="back-link" href="./">&larr; Back to Blackboard AI Tools</a>
+
+        <span class="audience">For colleagues</span>
+
+        <h1>AVA - Rubric and Feedback Assistant</h1>
+
+        <p>
+            Guidance on using AVA to summarise rubric feedback and rewrite draft
+            feedback within Blackboard's Flexible Grading interface.
+        </p>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="intro">
+        <p>
+            Providing high-quality written feedback is one of the most valuable and
+            time-intensive parts of marking. AVA includes two AI-powered writing tools
+            within Blackboard's Flexible Grading interface to help you draft and refine
+            overall feedback more efficiently.
+        </p>
+
+        <p>
+            Both tools are found in the <strong>AI Writing Tools</strong> section of the
+            Overall Feedback panel when grading in the Flexible Grading view.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Summarise rubric feedback</h2>
+
+        <p>
+            Once you have completed the marking rubric for a student's submission,
+            AVA can generate a suggested overall feedback summary based on everything
+            you have already filled in.
+        </p>
+
+        <p>It draws on:</p>
+
+        <ul>
+            <li>The rubric criteria and selected performance levels</li>
+            <li>The performance level descriptions</li>
+            <li>Any criterion-level comments you have added</li>
+            <li>Any text already in the Overall Feedback box</li>
+        </ul>
+
+        <p>
+            To use it, select the <strong>Summarise</strong> option in the Overall
+            Feedback area after completing the rubric. AVA produces a draft summary,
+            clearly labelled as AI-generated.
+        </p>
+
+        <p>You can then:</p>
+
+        <ul>
+            <li>Accept it as a starting point for further editing</li>
+            <li>Reject it to restore your original content</li>
+            <li>Regenerate it to get a fresh version</li>
+        </ul>
+
+        <p>
+            This feature is available in the Flexible Grading view for any Blackboard
+            assignment that has a completed rubric attached.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Rewrite feedback</h2>
+
+        <p>
+            The Rewrite tool helps polish rough feedback notes into clearer,
+            more student-friendly language. If you have typed bullet points,
+            shorthand comments, or draft sentences, AVA can rework them into
+            more coherent, professional feedback.
+        </p>
+
+        <p>To use Rewrite:</p>
+
+        <ol>
+            <li>
+                Enter at least 30 characters of your own feedback in the Overall
+                Feedback area.
+            </li>
+            <li>
+                Select <strong>Rewrite</strong>. AVA generates a suggested revision,
+                clearly labelled as AI-generated.
+            </li>
+            <li>
+                Accept the suggestion to continue editing or select Reject/Cancel
+                to restore your original input.
+            </li>
+        </ol>
+
+        <p>
+            You can run the Rewrite tool multiple times on the same text to iteratively
+            refine it. Accepting a suggestion does not finalise the feedback - you can
+            continue editing before saving.
+        </p>
+    </section>
+
+    <section class="note">
+        <strong>A note on responsible use</strong>
+
+        <p>
+            Both tools are designed to support and amplify your voice as a tutor,
+            not to replace your professional judgement.
+        </p>
+
+        <p>
+            Always review AI-generated feedback before it is released to students.
+            Do not include personal or sensitive information in your feedback prompts.
+        </p>
+
+        <p>
+            If you encounter output that seems inaccurate, biased, or inappropriate,
+            please report it via
+            <a href="mailto:genai@westminster.ac.uk">genai@westminster.ac.uk</a>.
+        </p>
+    </section>
+
+    <section class="further-info">
+        <h2>Further information</h2>
+
+        <p>
+            <a class="external-link"
+               href="https://help.anthology.com/blackboard/instructor/en/course-and-content-management/ava---ai-virtual-assistant.html">
+                AVA - AI Virtual Assistant (Blackboard Help)
+            </a>
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <strong>Learning Innovation and Digital Engagement</strong>
+</footer>
+
+</body>
+</html>
